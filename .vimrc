@@ -10,3 +10,6 @@ map <Leader>h vey0/\<"\>
 
 " http://vim.wikia.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
 " set scrolloff=5
+
+au BufRead,BufNewFile */commitmsg set textwidth=72
+
