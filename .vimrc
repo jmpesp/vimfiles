@@ -1,3 +1,6 @@
+set backupdir=~/.vim/tmpfiles/
+set dir=~/.vim/tmpfiles/
+
 set tabstop=4 shiftwidth=4 expandtab
 set cindent autoindent smartindent
 
