@@ -16,3 +16,15 @@ map <Leader>h vey0/\<"\>
 
 au BufRead,BufNewFile */commitmsg set textwidth=72
 
+colorscheme slate
+
+" paste same thing multiple times
+xnoremap p pgvy
+
+syn on
+set number
+
+" for vimwiki
+set nocompatible
+filetype plugin on
+syntax on
