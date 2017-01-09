@@ -37,7 +37,15 @@ filetype plugin on
 syntax on
 "let g:vimwiki_folding='list'
 
-let g:vimwiki_list = [{'path':'~/.vimwiki/wiki', 'path_html':'~/.vimwiki/export/html/'}]
+let wiki1 = {}
+let wiki1.path = '~/.vimwiki/wiki/'
+let wiki1.path_html = '~/.vimwiki/export/html/'
+
+let wiki2 = {}
+let wiki2.path = '~/vena/vimwiki/'
+let wiki2.path_html = '~/vena/vimwiki/export/html/'
+
+let g:vimwiki_list = [wiki1, wiki2]
 
 " python specific
 au BufRead,BufNewFile *.py set textwidth=100
