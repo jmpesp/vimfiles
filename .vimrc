@@ -24,6 +24,12 @@ xnoremap p pgvy
 syn on
 set number
 
+" for pathogen
+execute pathogen#infect()
+
 " for vimwiki
 set nocompatible
 filetype plugin on
+
+let g:vimwiki_list = [{'path':'~/.vimwiki/wiki', 'path_html':'~/.vimwiki/export/html/'}]
+
