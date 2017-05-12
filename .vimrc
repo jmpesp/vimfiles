@@ -51,3 +51,5 @@ let g:vimwiki_list = [wiki1, wiki2]
 au BufRead,BufNewFile *.py set textwidth=100
 au BufRead,BufNewFile *.py set colorcolumn=100
 
+" do not auto-insert comments in c style language
+autocmd BufNewFile,BufRead * setlocal formatoptions-=r
