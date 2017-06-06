@@ -1,7 +1,10 @@
 set backupdir=~/.vim/tmpfiles/
 set dir=~/.vim/tmpfiles/
 
-execute pathogen#infect()
+filetype off
+
+call pathogen#infect()
+call pathogen#helptags()
 
 set tabstop=4 shiftwidth=4 expandtab
 set cindent autoindent smartindent
@@ -48,8 +51,8 @@ let wiki2.path_html = '~/vena/vimwiki/export/html/'
 let g:vimwiki_list = [wiki1, wiki2]
 
 " python specific
-au BufRead,BufNewFile *.py set textwidth=100
-au BufRead,BufNewFile *.py set colorcolumn=100
+au BufRead,BufNewFile *.py set textwidth=80
+au BufRead,BufNewFile *.py set colorcolumn=80
 
 " do not auto-insert comments in c style language
 autocmd BufNewFile,BufRead * setlocal formatoptions-=r
