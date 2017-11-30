@@ -13,8 +13,8 @@ set cindent autoindent smartindent
 set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 
 let mapleader=";"
-map <Leader>j vey0/"
-map <Leader>h vey0/\<"\>
+map <leader>j vey0/"
+map <leader>h vey0/\<"\>
 
 " http://vim.wikia.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
 " set scrolloff=5
@@ -51,8 +51,17 @@ let wiki2.path_html = '~/vena/vimwiki/export/html/'
 let g:vimwiki_list = [wiki1, wiki2]
 
 " python specific
-au BufRead,BufNewFile *.py set textwidth=80
-au BufRead,BufNewFile *.py set colorcolumn=80
+au BufRead,BufNewFile *.py set textwidth=79
+au BufRead,BufNewFile *.py set colorcolumn=79
 
 " do not auto-insert comments in c style language
 autocmd BufNewFile,BufRead * setlocal formatoptions-=r
+
+" debian
+set mouse=
+
+" format json
+map <leader>J :%!jq .
+
+" write buffer to clipboard
+map <leader>C :w !xclip -in
