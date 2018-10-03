@@ -28,7 +28,7 @@ xnoremap p pgvy
 syn on
 colors slate
 
-set number
+"set number
 set hls
 
 let g:netrw_liststyle=3
@@ -54,6 +54,16 @@ let g:vimwiki_list = [wiki1, wiki2]
 au BufRead,BufNewFile *.py set textwidth=79
 au BufRead,BufNewFile *.py set colorcolumn=79
 
+" c/c++ specific
+au BufRead,BufNewFile *.c set tabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.cc set tabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.cxx set tabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.cpp set tabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.h set tabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.hh set tabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.hxx set tabstop=2 shiftwidth=2 expandtab
+au BufRead,BufNewFile *.hpp set tabstop=2 shiftwidth=2 expandtab
+
 " do not auto-insert comments in c style language
 autocmd BufNewFile,BufRead * setlocal formatoptions-=r
 
@@ -62,6 +72,9 @@ set mouse=
 
 " format json
 map <leader>J :%!jq .
+
+" clang-format
+map <leader>cf :%!clang-format -style=Google
 
 " write buffer to clipboard
 map <leader>C :w !xclip -in
