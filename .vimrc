@@ -3,9 +3,6 @@ set dir=~/.vim/tmpfiles/
 
 filetype off
 
-call pathogen#infect()
-call pathogen#helptags()
-
 set tabstop=4 shiftwidth=4 expandtab
 set cindent autoindent smartindent
 
@@ -78,3 +75,5 @@ map <leader>cf :%!clang-format -style=Google
 
 " write buffer to clipboard
 map <leader>C :w !xclip -in
+
+map <C-n> :NERDTreeToggle<CR>
