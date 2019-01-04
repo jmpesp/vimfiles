@@ -77,3 +77,7 @@ map <leader>cf :%!clang-format -style=Google
 map <leader>C :w !xclip -in
 
 map <C-n> :NERDTreeToggle<CR>
+
+" golint binding for :Lint
+set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
+
