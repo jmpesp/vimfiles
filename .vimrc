@@ -48,7 +48,6 @@ let wiki2.path_html = '~/vena/vimwiki/export/html/'
 let g:vimwiki_list = [wiki1, wiki2]
 
 " python specific
-au BufRead,BufNewFile *.py set textwidth=79
 au BufRead,BufNewFile *.py set colorcolumn=79
 
 " c/c++ specific
