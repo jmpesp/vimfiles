@@ -75,7 +75,9 @@ map <leader>cf :%!clang-format -style=Google
 " write buffer to clipboard
 map <leader>C :w !xclip -in
 
+" NERDTree
 map <C-n> :NERDTreeToggle<CR>
+map <leader>N :NERDTreeFocus<CR>
 
 " golint binding for :Lint
 set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
