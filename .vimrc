@@ -72,6 +72,9 @@ map <leader>J :%!jq .
 " clang-format
 map <leader>cf :%!clang-format -style=Google
 
+" terraform fmt
+map <leader>tf :%!terraform fmt -
+
 " write buffer to clipboard
 map <leader>C :w !xclip -in
 
