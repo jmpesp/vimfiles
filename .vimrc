@@ -85,3 +85,6 @@ map <leader>N :NERDTreeFocus<CR>
 " golint binding for :Lint
 set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
 
+" only read .gpg files with plugin
+let g:GPGFilePattern = '*.gpg'
+
