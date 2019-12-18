@@ -1,3 +1,7 @@
-    $ ls pack/auto/start/
-    nerdtree  vim-gnupg  vim-go  vimwiki
+    $ ls pack/auto/start/ | cat
+    nerdtree
+    rust.vim
+    vim-gnupg
+    vim-go
+    vimwiki
 
