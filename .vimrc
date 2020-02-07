@@ -88,3 +88,8 @@ set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
 " only read .gpg files with plugin
 let g:GPGFilePattern = '*.gpg'
 
+" rust.vim options
+let g:rustfmt_autosave = 1
+
+" autopep8
+map <leader>p8 :%!autopep8 -
