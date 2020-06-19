@@ -97,3 +97,5 @@ map <leader>p8 :%!autopep8 -
 " shellcheck
 au BufRead,BufNewFile *.sh :set makeprg=shellcheck\ -f\ gcc\ %
 au BufRead,BufNewFile *.bash :set makeprg=shellcheck\ -f\ gcc\ %
+
+" reformat lines: gq
