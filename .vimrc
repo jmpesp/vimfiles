@@ -1,3 +1,4 @@
+set backup
 set backupdir=~/.vim/tmpfiles/
 set dir=~/.vim/tmpfiles/
 
