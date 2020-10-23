@@ -100,3 +100,6 @@ au BufRead,BufNewFile *.sh :set makeprg=shellcheck\ -f\ gcc\ %
 au BufRead,BufNewFile *.bash :set makeprg=shellcheck\ -f\ gcc\ %
 
 " reformat lines: gq
+
+" c++filt
+map <leader>cppf :%!c++filt 
