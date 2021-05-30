@@ -42,14 +42,10 @@ let wiki1 = {}
 let wiki1.path = '~/.vimwiki/wiki/'
 let wiki1.path_html = '~/.vimwiki/export/html/'
 
-let wiki2 = {}
-let wiki2.path = '~/vena/vimwiki/'
-let wiki2.path_html = '~/vena/vimwiki/export/html/'
-
-let g:vimwiki_list = [wiki1, wiki2]
+let g:vimwiki_list = [wiki1]
 
 " python specific
-au BufRead,BufNewFile *.py set colorcolumn=79
+au BufRead,BufNewFile *.py set colorcolumn=80
 
 " c/c++ specific
 au BufRead,BufNewFile *.c set tabstop=2 shiftwidth=2 expandtab
