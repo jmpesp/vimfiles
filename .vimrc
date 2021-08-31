@@ -99,3 +99,5 @@ au BufRead,BufNewFile *.bash :set makeprg=shellcheck\ -f\ gcc\ %
 
 " c++filt
 map <leader>cppf :%!c++filt 
+
+let g:rustfmt_autosave = 0
