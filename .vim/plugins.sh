@@ -23,4 +23,5 @@ plugin https://github.com/preservim nerdtree
 plugin https://github.com/rust-lang rust.vim
 plugin https://github.com/fatih vim-go
 plugin https://github.com/vimwiki vimwiki
+plugin https://github.com/cespare vim-toml
 
