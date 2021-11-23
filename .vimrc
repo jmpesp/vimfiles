@@ -60,6 +60,9 @@ au BufRead,BufNewFile *.hpp set tabstop=2 shiftwidth=2 expandtab
 " do not auto-insert comments in c style language
 autocmd BufNewFile,BufRead * setlocal formatoptions-=r
 
+" Rust specific
+au BufRead,BufNewFile *.rs set textwidth=80 colorcolumn=80
+
 " debian
 set mouse=
 
@@ -101,3 +104,13 @@ au BufRead,BufNewFile *.bash :set makeprg=shellcheck\ -f\ gcc\ %
 map <leader>cppf :%!c++filt 
 
 let g:rustfmt_autosave = 0
+
+" patch with contents of yank
+" or: :%!patch -p1
+"map <leader>P :call system("patch -p1", getreg(""))
+map <leader>P :%!patch -p1
+
+" sessions!
+" :mksession ~/mysession.vim
+" vim -S ~/mysession.vim
+
