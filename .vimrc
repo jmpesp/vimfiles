@@ -81,6 +81,7 @@ map <leader>C :w !xclip -in
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
 map <leader>N :NERDTreeFocus<CR>
+" press R when in NERDTree pane to refresh!
 
 " golint binding for :Lint
 set rtp+=$GOPATH/src/golang.org/x/lint/misc/vim
@@ -113,4 +114,17 @@ map <leader>P :%!patch -p1
 " sessions!
 " :mksession ~/mysession.vim
 " vim -S ~/mysession.vim
+
+" for unicode, go to insert mode, ctrl-v, then type uNNNN:
+" U+2194 = ↔
+" U+2713 = ✓
+
+" Ctrl-w H or type :wincmd H to go from horizontal to vertical layout.
+" Ctrl-w J or type :wincmd J to go from vertical to horizontal layout.
+
+" Show tabs as >>, and trailing characters as U+2593 (dark shade block)
+set list
+set lcs=eol:↵
+set lcs+=tab:▹▹
+set lcs+=trail:▓
 
