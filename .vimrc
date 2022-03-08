@@ -124,7 +124,7 @@ map <leader>P :%!patch -p1
 
 " Show tabs as >>, and trailing characters as U+2593 (dark shade block)
 set list
-set lcs=eol:↵
-set lcs+=tab:▹▹
+" set lcs=eol:↵
+set lcs=tab:▹▹
 set lcs+=trail:▓
 
