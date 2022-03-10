@@ -99,7 +99,7 @@ map <leader>p8 :%!autopep8 -
 au BufRead,BufNewFile *.sh :set makeprg=shellcheck\ -f\ gcc\ %
 au BufRead,BufNewFile *.bash :set makeprg=shellcheck\ -f\ gcc\ %
 
-" reformat lines: gq
+" reformat lines: gq, but make sure to use nocindent!
 
 " c++filt
 map <leader>cppf :%!c++filt 
